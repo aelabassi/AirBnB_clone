@@ -87,36 +87,25 @@
     width: 100%;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
+    margin-left: -50px;
     padding-top: 10%;
     padding-bottom: 10%;
     padding-left: 0;
     list-style-type: none;
-    position: absolute;
+    position: relative;
+    z-index: 10;
 }
 
 
-.popover > li > h2{
-    display: block;
+.popover  h2{
     margin-bottom: 0;
     margin-top: 0;
     font-size: 16px;
 }
 
-.popover > li{
-    position: relative;
-    display: block;
-    cursor: pointer;
-}
 
-.popover >li > ul {
-    display: none;
-    position: absolute;
 
-}
-.popover>li:hover > ul {
-    display: block;
-}
-
-.filters:hover .popover {
+.filters .locations:hover .popover,
+.filters .amenities:hover .popover{
     display: block;
 }
