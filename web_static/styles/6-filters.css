@@ -90,24 +90,33 @@
     padding-top: 10%;
     padding-bottom: 10%;
     padding-left: 0;
-}
-.popover li {
-    list-style: none;
+    list-style-type: none;
+    position: absolute;
 }
 
-.popover h2{
-    display: inline-block;
+
+.popover > li > h2{
+    display: block;
     margin-bottom: 0;
     margin-top: 0;
     font-size: 16px;
 }
 
-.popover li{
-    padding: 0 10%;
-    margin: .5rem 0;
-    display: inline-block;
+.popover > li{
+    position: relative;
+    display: block;
+    cursor: pointer;
 }
 
-.popover li:hover > ul {
+.popover >li > ul {
+    display: none;
+    position: absolute;
+
+}
+.popover>li:hover > ul {
+    display: block;
+}
+
+.filters:hover .popover {
     display: block;
 }

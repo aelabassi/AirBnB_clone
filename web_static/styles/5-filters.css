@@ -1,7 +1,7 @@
 .filters {
     background-color: white;
     display: flex;
-    justify-content: first baseline;
+    justify-content: flex-start;
     height: 70px;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
